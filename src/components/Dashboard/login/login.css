@@ -1,0 +1,315 @@
+/*=============== GOOGLE FONTS ===============*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@600&family=Poppins:wght@500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=ABeeZee&family=Inknut+Antiqua:wght@600&family=Poppins:wght@500;600&display=swap');
+
+  /*=============== BASE ===============*/
+  * {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    font-family: 'Poppins', sans-serif;
+    font-size: .938rem;
+    background-color: #fff;
+  }
+  
+  h1, h2, h3 {
+    color: #000;
+    font-weight: 600;
+  }
+  
+  ul {
+    list-style: none;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  input,
+  button {
+    font-family: 'Poppins', sans-serif;
+    outline: none;
+    border: none;
+  }
+  
+
+.login-form-container{
+  height: 100vh;
+}
+
+.login-box {
+  background-color: #fff;
+  display: flex;
+  flex-direction: row;
+}
+
+.login-left{
+  width: 50%;
+}
+
+.login-left img{
+  height: 100vh;
+  width: 100%;
+  object-fit: cover;
+}
+
+.login-right{
+  padding-left: 80px;
+  width: 50%;
+  padding-right: 80px;
+}
+
+.welcome-text{
+  text-align: center;
+  margin-top: 30px;
+}
+
+.welcome-text h1{
+  font-family: 'Inknut Antiqua', sans-serif;
+  font-size: 35px;
+  font-style: normal;
+  line-height: normal;
+}
+
+.welcome-text p{
+  color: #818181;
+  font-family: 'Poppins', sans-serif;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.signup-text{
+  margin-top: 50px;
+}
+
+.signup-text h1{
+  font-family: 'Inknut Antiqua', sans-serif;
+  font-size: 45px;
+  font-style: normal;
+  line-height: normal;
+}
+
+.form-login{
+  display: flex;
+  flex-direction: column;
+  margin-top: 90px;
+}
+
+.input-login input{
+  width: 478px;
+  height: 35px;
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #E5E5E5;
+  background-color: #E5E5E5;
+}
+
+
+.email, .name{
+  margin-bottom: 20px;
+}
+
+.confpass{
+  margin-top: 20px;
+}
+
+.form-login button{
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: #367D99;
+  color: #fff;
+  font-weight: 600;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.description_fpw{
+  font-family: 'ABeeZee', sans-serif;
+  margin-bottom: 10px;
+  font-size: 14px;
+  color: #4D4D4D;
+  cursor: pointer;
+  font-weight: 400;
+  margin-top: 10px;
+}
+
+.form-login button{
+  margin-top: 60px;
+}
+
+/* Add this CSS to your stylesheet */
+.line-with-text {
+  text-align: center;
+  position: relative;
+  margin-top: 30px;
+  color: #8b8b8b;
+}
+
+.line-with-text span {
+  background: #fff; /* Background color to cover the line */
+  padding: 0 10px; /* Adjust padding as needed */
+  position: relative;
+  z-index: 1;
+}
+
+.line-with-text::before,
+.line-with-text::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: 45%; /* Adjust the width to control the line's length */
+  height: 1px; /* Line thickness */
+  background: #8b8b8b;
+}
+
+.line-with-text::before {
+  left: 0;
+  transform: translateY(-50%);
+}
+
+.line-with-text::after {
+  right: 0;
+  transform: translateY(-50%);
+}
+
+/* Add this CSS to your stylesheet */
+/* Add this CSS to your stylesheet */
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 20px;
+}
+
+.icon-box {
+  width: 50px; /* Set the width and height for square icon boxes */
+  height: 50px;
+  background: #eae8e8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 15px; /* Add border-radius for rounded corners */
+  font-size: 24px;
+  color: #000;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Atur bayangan dengan offsetX, offsetY, blurRadius, dan opacity */
+  transition: box-shadow 0.3s;
+}
+
+.icon-box:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4); /* Bayangan yang berubah saat kursor mouse mengarah pada ikon */
+}
+
+.social-icons .icon-box:nth-child(1) .fa-google {
+  color: #000000; /* Set the desired color for Google */
+}
+
+/* Facebook icon color */
+.social-icons .icon-box:nth-child(2) .fa-facebook {
+  color: #000000; /* Set the desired color for Facebook */
+}
+
+/* Apple icon color */
+.social-icons .icon-box:nth-child(3) .fa-apple {
+  color: #000; /* Set the desired color for Apple */
+}
+
+.signup-link{
+  text-align: center;
+  font-family: 'ABeeZee', sans-serif;
+  margin-top: 25px;
+  color: #4D4D4D;
+}
+
+.signin-link{
+  text-align: center;
+  font-family: 'ABeeZee', sans-serif;
+  margin-top: 40px;
+  color: #4D4D4D;
+}
+
+/* login.css */
+/* Responsif untuk perangkat seluler */
+@media (max-width: 768px) {
+  .login-box {
+    flex-direction: column; /* Mengubah orientasi tata letak menjadi vertikal */
+    align-items: center; /* Pusatkan elemen dalam .login-box */
+    padding: 10px; /* Tambahkan ruang di sekitar elemen */
+  }
+
+  .login-left {
+    display: none; /* Tetap menyembunyikan .login-left */
+  }
+
+  .login-right {
+    width: 100%; /* Mengisi seluruh lebar .login-right */
+  }
+
+  .welcome-text{
+    margin-top: 100px;
+  }
+
+  .welcome-text h1 {
+    font-size: 28px; /* Perkecil ukuran huruf judul sambutan */
+  }
+
+  .welcome-text p {
+    font-size: 14px; /* Perkecil ukuran huruf teks sambutan */
+  }
+
+  .form-login{
+    margin-top: 8rem;
+  }
+  .input-login input {
+    width: 100%; /* Mengisi seluruh lebar input */
+  }
+
+  .form-login button {
+    margin-top: 4rem; /* Tambahkan sedikit ruang di atas tombol */
+  }
+
+  .description_fpw{
+    font-size: 13px;
+  }
+  
+  .line-with-text {
+    margin-top: 20px; /* Tambahkan sedikit ruang di atas garis "OR" */
+  }
+
+  .social-icons {
+    gap: 35px; /* Kurangi jarak antara ikon-ikon sosial */
+  }
+
+  .icon-box {
+    width: 40px; /* Perkecil ukuran ikon-ikon */
+    height: 40px;
+  }
+
+  .signup-link {
+    margin-top: 15px;
+    font-size: 15px; /* Tambahkan sedikit ruang di atas tautan pendaftaran */
+  }
+
+  .signin-link{
+    font-size: 13px;
+  }
+}
+

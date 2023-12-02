@@ -1,0 +1,62 @@
+.services {
+  padding: 0 3rem 0 3rem;
+  display: flex;
+  height: 30rem;
+  margin-top: 9rem;
+  padding-top: 3rem;
+}
+
+.job{
+  display: flex;
+  justify-content: center; /* Memusatkan kotak-kotak secara horizontal */
+  align-items: center;
+  gap: 10px;
+  padding: 0.5rem 3.5rem;
+  margin-top: 6rem;
+  margin-bottom: 4rem;
+}
+
+.box {
+  width: 135px;
+  height: 135px;
+  margin: 10px;
+  background-color: #AFC1D0;
+  border-radius: 15px;
+  cursor: pointer ;
+}
+
+.box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@media screen and (max-width: 480px) {
+  .services {
+    margin-top: 0;
+    flex-direction: column;
+    gap: 5rem;
+    height: auto; /* Sesuaikan dengan konten */
+    padding: 0;
+  }
+
+  .cards {
+    display: flex;
+    flex-direction: column;
+    gap: 17rem;
+  }
+  .cards > * {
+    position: static;
+  }
+
+  .box {
+    width: 100%; /* Sesuaikan dengan preferensi Anda */
+    height: 100%; /* Sesuaikan dengan preferensi Anda */
+    margin: 2%;
+  }
+}
+
+
+/* KotakGambar.css */
+
+

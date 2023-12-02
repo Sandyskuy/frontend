@@ -1,0 +1,75 @@
+
+
+.n-wrapper {
+  height: 70px;
+  display: flex;
+  justify-content: space-between;
+  top: 0;
+  padding: 0.5rem 3.5rem;
+}
+.n-left {
+  flex: 1;
+  align-items: center;
+  justify-content: left;
+  display: flex;
+  gap: 2rem;
+}
+
+.n-names {
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #0071A8;
+}
+.n-right {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  font-weight: 400;
+}
+
+.n-list {
+  flex: 10;
+}
+.n-list > ul {
+  display: flex;
+  gap: 2rem;
+  margin-right: 4rem;
+  color: black;
+}
+
+.link{
+  color: #000;
+}
+
+.n-list > ul :hover {
+  color: #367D99;
+  cursor: pointer;
+}
+
+
+.button{
+  background: linear-gradient(180deg, #367D99 26.71%, #285466 99.36%);
+  border-radius: 15px;
+  border: none;
+  color: white;
+  font-size: 14px;
+  padding: 11px 26px 11px 26px;
+  width: 105px;
+  height: 40px;
+  cursor: pointer;
+}
+
+.n-button {
+  flex: 2;
+}
+
+.about{
+  width: 100px;
+}
+
+@media screen and (max-width: 480px) {
+  .n-list {
+    display: none;
+  }
+}

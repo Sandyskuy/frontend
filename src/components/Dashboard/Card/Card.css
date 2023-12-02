@@ -1,0 +1,80 @@
+/* Card.css */
+
+.card-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 4rem;
+  gap: 40px;
+  overflow-x: auto; /* Menambahkan overflow-x untuk mengaktifkan scroll horizontal */
+  white-space: nowrap; 
+  padding: 0.5rem 3.5rem;/* Mencegah pemisahan baris pada konten */
+}
+
+.card-titles{
+  font-size: 35px;
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.card {
+  width: 384px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #EEEEEE;
+}
+
+.card-img-top {
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.card-title {
+  font-size: 18px;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  color: black;
+}
+
+.card-job{
+  color: #797979;
+  font-size: 16px;
+}
+
+.job-line {
+  border: none;
+  border-top: 1px solid #ccc;
+  margin: 10px 0;
+}
+
+
+@media (max-width: 768px) {
+  .card-container {
+    flex-direction: row;
+    align-items: center;
+    padding: 0;
+  }
+
+  .card {
+    width: 110px; /* Mengisi seluruh lebar layar pada perangkat berukuran kecil */
+    margin: 0 5px;
+  }
+
+  .card-img-top {
+    width: 50px; /* Atur ulang ukuran gambar untuk perangkat berukuran kecil */
+    height: 50px;
+  }
+
+  .card-title{
+    font-size: 13px;
+  }
+}
