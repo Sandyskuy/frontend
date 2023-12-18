@@ -1,16 +1,20 @@
 /* Card.css */
 
-.card-container {
-  display: flex;
-  align-items: center;
-  margin-bottom: 4rem;
-  gap: 40px;
-  overflow-x: auto; /* Menambahkan overflow-x untuk mengaktifkan scroll horizontal */
-  white-space: nowrap; 
-  padding: 0.5rem 3.5rem;/* Mencegah pemisahan baris pada konten */
+:root {
+  --gap-size: 70px;
 }
 
-.card-titles{
+.card-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 4rem;
+  gap: var(--gap-size);
+  padding: 0.5rem 3.5rem; /* Mencegah pemisahan baris pada konten */
+}
+
+.card-titles {
   font-size: 35px;
   font-family: 'Poppins', sans-serif;
   text-align: center;
@@ -18,16 +22,16 @@
 }
 
 .card {
-  width: 384px;
-  border: 1px solid #ccc;
+  width: 250px;
+  height: 250px;
   border-radius: 10px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adjusted box-shadow */
   text-align: center;
-  padding: 20px;
+  padding-top: 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #EEEEEE;
+  background-color: #f5f5f5; /* Set background color to white */
 }
 
 .card-img-top {
@@ -45,15 +49,32 @@
   color: black;
 }
 
-.card-job{
+.card-job {
   color: #797979;
   font-size: 16px;
 }
 
 .job-line {
+  width: 250px;
   border: none;
   border-top: 1px solid #ccc;
   margin: 10px 0;
+  margin-top: 50px;
+}
+
+.view-link {
+  color: black; /* Change color as needed */
+  cursor: pointer;
+  font-size: 14px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.view-link i {
+  margin-left: 5px; /* Adjust spacing as needed */
 }
 
 
@@ -62,10 +83,17 @@
     flex-direction: row;
     align-items: center;
     padding: 0;
+    gap: 10px;
   }
 
+  .card-titles {
+    font-size: 20px;
+  }
+  
+
   .card {
-    width: 110px; /* Mengisi seluruh lebar layar pada perangkat berukuran kecil */
+    width: 110px; 
+    height: 150px;
     margin: 0 5px;
   }
 
@@ -74,7 +102,20 @@
     height: 50px;
   }
 
-  .card-title{
+  .card-title {
     font-size: 13px;
+  }
+
+  .card-job {
+    font-size: 12px;
+  }
+
+  .job-line{
+    width: 110px;
+    margin-top: 15px;
+  }
+
+  .view-link {
+    font-size: 11px;
   }
 }

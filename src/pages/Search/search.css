@@ -1,0 +1,156 @@
+.title-search{
+    margin-top: 40px;
+}
+/* search.css */
+
+/* ... (other styles) */
+
+.search-bar-container {
+    margin: 90px 0;
+    display: flex;
+    justify-content: center; /* Center items horizontally */
+    align-items: center;
+  }
+  
+  .search-bar {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    width: 800px;
+    margin-right: 10px;
+    background-color: #e7e7e7;
+  }
+  
+  .filter-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .filter-icon {
+    font-size: 1.5rem;
+    cursor: pointer;
+    margin-left: 5px;
+    color: #555; 
+  }
+  
+/* search.css */
+
+/* Add these styles for the custom table */
+.custom-table {
+  width: 100%;
+  border-collapse: collapse;
+  color: #000;
+  align-items: center;
+  font-family: 'Poppins', sans-serif;
+  margin-bottom: 30px;
+  font-size: 13px;
+}
+
+.custom-table th, .custom-table td {
+  border-bottom: 1px solid #727272;
+  padding: 8px;
+  text-align: left;
+  color: black;
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+}
+
+.custom-table th {
+  background-color: #ffffff;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Add these styles for the profile section in the table */
+.profile-info {
+  display: flex;
+  align-items: center;
+  margin-left: 100px;
+}
+
+.profile-img-round {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: #ccc; /* Add your background color or image here */
+  margin-right: 10px;
+}
+
+.profile-name{
+  font-weight: 600;
+}
+
+.profile-job{
+  font-size: 15px;
+  color: #797979;
+  font-weight: 400;
+}
+
+.profile-location{
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.profile-exp{
+  font-size: 15px;
+  font-weight: 400;
+}
+
+/* Responsive styles for the search bar */
+@media screen and (max-width: 1024px) {
+  .search-bar-container {
+    margin: 30px 0; /* Adjusted margin for smaller screens */
+  }
+
+  .search-bar {
+    margin: 10px 0; /* Adjusted margin for smaller screens */
+  }
+
+}
+
+/* Responsive styles for the table and profile section */
+@media screen and (max-width: 768px) {
+  .profile-info {
+    margin-left: 0; /* Center the profile section for smaller screens */
+    align-items: center;
+  }
+
+  .profile-img-round {
+    margin-right: 0; /* Adjusted margin for smaller screens */
+    width: 50px;
+    height: 50px;
+  }
+
+  .search-bar {
+    width: 300px;
+    height: 40px;
+  }
+
+  .profile-job{
+    font-size: 12px;
+    color: #797979;
+    font-weight: 400;
+  }
+
+  .profile-location{
+    font-size: 12px;
+    font-weight: 400;
+  }
+  
+  .profile-exp{
+    font-size: 12px;
+    font-weight: 400;
+  }
+
+  .profile-name{
+    font-size: 14px;
+    font-weight: 600;
+  }
+
+  .custom-table td{
+    font-size: 14px;
+  }
+}
+
+
+
+  

@@ -35,7 +35,7 @@ export const Login = (props) => {
                             <p class="description_fpw">
                                 Forget your password?
                             </p>
-                            <Link to="/">
+                            <Link to="/Dashboard">
                             <button>Sign In</button>
                             </Link>
                         </div>

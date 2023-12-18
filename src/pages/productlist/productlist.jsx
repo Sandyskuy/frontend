@@ -5,10 +5,10 @@ import Navbar from "../../components/Dashboard/Navbar/Navbar";
 import Footer from "../../components/Dashboard/Footer/Footer";
 import "../../App.css";
 import { themeContext } from "../../Context";
+import { Link } from "react-router-dom";
 
 const ProductList = () => {
     const theme = useContext(themeContext);
-    const darkMode = theme.state.darkMode;
     const [data, setData] = useState([]);
     
     useEffect(() => {
@@ -25,22 +25,28 @@ const ProductList = () => {
         }
     };
 
-    const deleteData = async(id) => {
-        try{
-            await axios.delete('http://localhost:8080/data/${id}');
+    const deleteData = async (id) => {
+        try {
+            await axios.delete(`http://localhost:8080/delete-data/${id}`);
             getData();
-        } catch (error){
+        } catch (error) {
             console.error('Error Deleting Maid:', error);
         }
     };
+    
 
     return(
         <div className='App' >
             <Navbar />
             <div className='product-list'>
-
+                <Link to="/Tambahproduk">
+                    <button className='button-list' type='submit'>
+                        Tambahkan
+                    </button>
+                </Link>
             <table className='table-container'>
                 <caption className='table-caption'>Data Maid</caption>
+
                 <thead>
                     <tr>
                         <th>No</th>
@@ -59,7 +65,11 @@ const ProductList = () => {
                                 <td>{data.job}</td>
                                 <td>{data.price}</td>
                                 <td>
-                                    <button className='button-list'>Edit</button>
+                                    <Link to={`/Editproduk/${data.id}`}>
+                                    <button className='button-list'>
+                                       Edit
+                                    </button>
+                                    </Link>
                                     <button className='button-list' onClick={() => deleteData(data.id)}>Hapus</button>
                                 </td>
                             </tr>

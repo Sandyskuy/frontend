@@ -1,0 +1,85 @@
+.about-us {
+    font-family: "Poppins", sans-serif;
+}
+
+.i-name-about {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+    margin-left: 100px;
+    margin-top: 50px;
+  }
+
+.i-name-about span{
+    color: black;
+    font-weight: bold;
+    font-size: 68px;
+}
+
+.aboutus-detail{
+    padding: 0.5rem 3.5rem;
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+.our-vm {
+    margin-top: 20px;
+}
+
+.our-vm h2 {
+    font-family: "Poppins", sans-serif;
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+}
+
+.our-vm p {
+    font-family: "Poppins", sans-serif;
+    font-size: 18px;
+    color: #6B6B6B;
+    line-height: 1.5;
+}
+
+.timeline-container {
+    margin-top: 50px;
+    padding: 0.5rem 5rem;
+}
+
+.timeline-content{
+    margin-bottom: 30px;
+}
+
+.timeline-content h2 {
+    font-family: "Poppins", sans-serif;
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #053B50;
+}
+
+.timeline-content p {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    color: #053B50;
+    line-height: 1.5;
+}
+
+.timeline-content ul {
+    list-style-type: disc; /* or 'circle' or 'square' based on your preference */
+    margin: 10px 0; /* Add margin for spacing */
+    padding-left: 20px; /* Add left padding for indentation */
+  }
+  
+  .timeline-content ul li {
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    color: #053B50;
+    line-height: 1.5;
+  }
+
+  @media screen and (max-width: 768px) {
+    .timeline-container {
+        padding: 0.5rem 1.5rem;
+    }
+  }
+

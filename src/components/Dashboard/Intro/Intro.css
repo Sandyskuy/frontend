@@ -85,7 +85,7 @@
   .Intro {
     flex-direction: column;
     gap: 7rem;
-    height: 50rem;
+    height: 33rem;
   }
 
   .i-left{
@@ -102,5 +102,21 @@
   .floating-div:nth-of-type(1){
     /* display: none; */
     top: -7rem !important;;
+  }
+  .i-name > :nth-child(1) {
+    color: #0071A8;
+    font-weight: bold;
+    font-size: 30px;
+  }
+  .i-name > :nth-child(2) {
+    color: black;
+    font-weight: bold;
+    font-size: 30px;
+  }
+  .i-name > :nth-child(3) {
+    font-weight: 100;
+    font-size: 14px;
+    color: var(--gray);
+    margin-top: 10px;
   }
 }

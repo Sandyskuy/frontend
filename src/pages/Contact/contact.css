@@ -1,0 +1,144 @@
+/* aboutus.css */
+
+/* ... (previous CSS code) */
+
+.contact-form-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem 3.5rem;
+    margin-top: 150px;
+    margin-bottom: 150px;
+}
+
+.contact-card {
+    background-color: #367d99;
+    border-radius: 10px;
+    color: #fff;
+    width: 380px;
+    padding: 40px;
+  }
+  
+  .contact-title {
+    text-align: center;
+    font-size: 24px;
+    color: #fff;
+  }
+  
+  .email-info {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+  }
+  
+  .email-info span {
+    margin-top: 8px;
+  }
+  
+  
+  .contact-form {
+    flex: 1;
+    padding: 20px;
+    background: #fff; /* Adjust background color as needed */
+    border-radius: 8px;
+  }
+  
+/* aboutus.css */
+
+/* ... (previous CSS code) */
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .contact-form label {
+    font-size: 1rem;
+    margin-top: 10px;
+  }
+  
+  .contact-form input,
+  .contact-form textarea {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  
+/* aboutus.css */
+
+/* ... (previous CSS code) */
+
+.contact-form button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #367d99; /* Updated to the specified color */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .contact-form button:hover {
+    background-color: #1a4e66; /* Darker shade for hover effect */
+  }
+  
+  
+  .email-info span svg {
+    /* Adjust styles for the email icon */
+    margin-right: 8px;
+  }
+
+  .social-section {
+    margin-top: 50px;
+  }
+  
+  .social-icons {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .social-icons span {
+    color: white;
+    font-size: 14px;
+  }
+
+  .icons-item{
+    color: #fff;
+    margin-right: 8px;
+  }
+
+  .keep-in-touch {
+    font-size: 1.5rem;
+    color: #367D99; /* Your blue color */
+    margin-bottom: 10px;
+  }
+  
+  .contact-description {
+    font-size: 1rem;
+    color: #000000;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    font-weight: 200;
+  }
+  
+  @media (max-width: 768px) {
+    .contact-form-row {
+        flex-direction: column;
+        align-items: center;
+        padding: 0.5rem 1rem;
+    }
+
+    .contact-card {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .contact-form {
+        width: 100%;
+    }
+
+    /* Add any additional responsive styles as needed */
+}
+  

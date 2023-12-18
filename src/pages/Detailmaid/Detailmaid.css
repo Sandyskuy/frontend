@@ -1,0 +1,168 @@
+.cover-photo {
+    position: relative;
+    height: 200px; /* Sesuaikan tinggi sesuai kebutuhan */
+    margin-bottom: 80px;
+}
+
+.profile-picture-container {
+    position: absolute;
+    bottom: -60px; /* Sesuaikan jarak di bawah tepi bawah */
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.profile-picture {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 3px solid white; /* Tambahkan garis tepi jika diinginkan */
+}
+
+.profile-infos {
+    display: flex;
+    flex-direction: column; /* Menjadikan child di dalamnya berada dalam satu kolom */
+    justify-content: center; /* Untuk mengatur posisi vertikal */
+    margin-top: 10px; /* Tambahkan margin top jika diperlukan */
+    text-align: center;
+}
+
+.profile-infos h2 {
+    font-family: "Poppins", sans-serif;
+    font-size: 1.3rem;
+}
+
+.profile-infos p {
+    font-family: "Poppins", sans-serif;
+}
+
+.job-profile{
+    font-size: 16px;
+    color: #797979;
+}
+
+.price-profile{
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.button-container {
+    display: flex;
+    margin: 20px; /* Adjust the margin as needed */
+    justify-content: center;
+    margin-top: 50px;
+    gap: 50px;
+}
+
+.chat-button,
+.order-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: 2px solid #367D99;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 300px;
+}
+
+.chat-button {
+    color: #367D99;
+    background-color: white;
+}
+
+.order-button {
+    color: white;
+    background-color: #367D99;
+}
+
+.chat-button:hover{
+    background-color: #367D99;
+    color: white;
+}
+
+.order-button:hover {
+    color: #367D99;
+    background-color: white;
+}
+
+.maid-detail{
+    padding: 0.5rem 3.5rem;
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+.about-me-container {
+    margin-top: 20px;
+}
+
+.about-me-container h2 {
+    font-family: "Poppins", sans-serif;
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+}
+
+.about-me-container p {
+    font-family: "Poppins", sans-serif;
+    font-size: 18px;
+    color: #555;
+    line-height: 1.5;
+}
+
+.biodata-container {
+    margin-top: 20px;
+}
+
+.biodata-container h2 {
+    font-family: "Poppins", sans-serif;
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+}
+
+.biodata-container ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.biodata-container li {
+    font-family: "Poppins", sans-serif;
+    font-size: 18px;
+    color: #555;
+    line-height: 1.5;
+    margin-bottom: 10px;
+}
+
+.job-container {
+    margin-top: 20px;
+}
+
+.job-container h2 {
+    font-family: "Poppins", sans-serif;
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+}
+
+.job-container ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.job-container li {
+    font-family: "Poppins", sans-serif;
+    font-size: 18px;
+    color: #555;
+    line-height: 1.5;
+    margin-bottom: 10px;
+}
+
+@media screen and (max-width: 768px) {
+    .button-container {
+        gap: 25px;
+    }
+
+    .chat-button,
+    .order-button {
+    font-size: 16px;
+    width: 150px;
+}
+}
+
+

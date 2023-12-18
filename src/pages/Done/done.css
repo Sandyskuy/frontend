@@ -1,0 +1,46 @@
+/* Selesai.css */
+
+.selesai-container {
+    text-align: center;
+    padding: 50px;
+    margin-top: 50px;
+  }
+  
+  .checkmark-icon {
+    color: #28a745; /* Color of the checkmark */
+    font-size: 3rem;
+    margin-bottom: 20px;
+    width: 150px;
+    height: 150px;
+  }
+  
+  .selesai-container h1 {
+    font-size: 1.5rem;
+  }
+
+  /* Selesai.css */
+
+/* ... (previous CSS code) */
+
+.kembali-button {
+    padding: 10px 20px;
+    font-size: 14px;
+    background-color: #f0f0f0;
+    color: #555;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+  }
+  
+  .kembali-button:hover {
+    background-color: #d0d0d0;
+  }
+
+  @media screen and (max-width: 768px) {
+    .selesai-container {
+        margin-bottom: 70px;
+      }
+}
+  

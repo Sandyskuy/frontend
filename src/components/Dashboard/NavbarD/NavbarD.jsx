@@ -3,8 +3,9 @@ import Toggle from "../Toggle/Toggle";
 import "./Navbar.css";
 import { Link } from "react-router-dom";
 import { themeContext } from "../../../Context";
+import Avatar from "../../../img/Avatar.png";
 
-const Navbar = () => {
+const NavbarD = () => {
 
   const theme = useContext(themeContext);
   const darkMode = theme.state.darkMode;
@@ -26,15 +27,13 @@ const Navbar = () => {
               </Link>
             </li>
             <li>
-              <Link to="/Search" className="link">
+            <Link to="/Search" className="link">
                 Search
-              </Link>
-            </li>
-            <li>
-            <Link to="/Productlist" className="link">
-                Help
             </Link>
             </li>
+            <Link to="/Contact" className="link">
+                Contact
+            </Link>
             <Link to="/Aboutus" className="link">
             <li className="about">
                 About Us
@@ -42,12 +41,10 @@ const Navbar = () => {
             </Link>
           </ul>
         </div>
-        <Link to="/login">
-        <button className="button n-button">Sign In</button>
-        </Link>
+        <img src={Avatar} alt="Avatar" className="avatar-icon" />
       </div>
     </div>
   );
 };
 
-export default Navbar;
+export default NavbarD;

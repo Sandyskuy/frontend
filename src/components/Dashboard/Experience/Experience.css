@@ -1,51 +1,131 @@
-.experience {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 5rem;
-  height: 30vh;
-  margin-bottom: 8rem;
-  /* darkmode */
-  color: var(--black);
-}
-.achievement{
+/* Style untuk container utama */
+.about-section {
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 80px;
+  }
+  
+  /* Style untuk container flex */
+  .overlap-group {
+    height: 350px;
+    background-color: #053B50;
+  }
+  
+  .about-title {
+    font-size: 35px;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    margin-bottom: 80px;
+  }
+  
+  /* Style untuk gambar */
+  .img {
+    height: 430px;
+    width: 430px;
+    object-fit: cover;
+    margin-top: -35px;
+  }
+  
+  /* Style untuk div teks */
+  .text {
+    /* Jika ingin teks memiliki lebar tetap, Anda dapat menggunakan flex-basis */
+    flex-basis: 60%;
+    margin-top: 30px;
+    text-align: center;
+  }
+  
+  /* Style untuk content-about */
+  .content-about {
+    margin-left: 100px;
     display: flex;
-    flex-direction: column;    
-    align-items: center;
-}
-.circle {
-    width: 4rem;
-    height: 4rem;
-    background: white;
-    border-radius: 100%;
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 1.5rem;
+    flex-direction: row;
+  }
+  
+  /* Tambahan styling sesuai kebutuhan */
+  .text-title{
+    /* Gaya untuk judul "Why Partner with Us?" */
+    font-size: 24px;
     font-weight: bold;
-    margin-bottom: 2rem;
-}
-.circle::before {
-    border-radius: 100%;
-    content: '';
-    background-image: linear-gradient(to bottom, #87e6fb 0%, #ffc05c 100%);
-    top: -8px;
-    left: -8px;
-    bottom: -8px;
-    right: -8px;
-    position: absolute;
-    z-index:-1;
-    box-shadow: var(--boxShadow);
-}
+    margin-bottom: 30px;
+    align-items: center;
+  }
+  
+  .text-lists {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .icon {
+    color: #4CAF50; /* Green color for the checkmark */
+    margin-left: 10px; /* Add spacing between the icon and text */
+  }
 
-.achievement span:nth-of-type(2){
-    color: var(--orange);
-}
+  .text-wrapper{
+    margin-bottom: 30px;
+  }
 
+  .list-column {
+    flex-basis: 50%;
+  }
+  
+  .list-column .list {
+    margin-bottom: 10px;
+  }
 
-@media screen and (max-width: 480px) {
-    .experience{
-        transform: scale(0.7);
+  
+  @media screen and (max-width: 768px){
+    .about-title {
+      font-size: 30px;
     }
-}
+  
+    .img {
+      height: 250px;
+      width: 250px;
+      margin-top: -25px;
+    }
+  
+    .content-about {
+      margin-left: 10px;
+    }
+
+    .overlap-group {
+      height: 200px;
+      background-color: #053B50;
+    }
+
+    .text-title{
+      /* Gaya untuk judul "Why Partner with Us?" */
+      font-size: 16px;
+    }
+
+    .text-wrapper{
+      margin-bottom: 10px;
+      font-size: 8px;
+      font-weight: 400;
+    }
+
+    .icon {
+      color: #4CAF50; /* Green color for the checkmark */
+      margin-left: 5px;
+    }
+  }
+  
+  /* Large desktops and beyond */
+  @media screen and (min-width: 1200px) {
+    .img {
+      height: 400px;
+      width: 400px;
+    }
+  
+    .content-about {
+      margin-left: 100px;
+    }
+
+    .text-wrapper{
+      margin-bottom: 10px;
+    }
+  }
+  
+
+
+  
